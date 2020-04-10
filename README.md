@@ -13,4 +13,5 @@ Personal Vim cheatsheet.
 :%s//bla/ # replace last search pattern
 
 :%! sort # sort current buffer content
+:'<,'>norm! @q # apply macro on a visual selection
 ```
