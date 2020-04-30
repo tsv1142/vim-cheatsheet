@@ -14,4 +14,6 @@ Personal Vim cheatsheet.
 
 :%! sort # sort current buffer content
 :'<,'>norm! @q # apply macro on a visual selection
+
+:set noexpandtab # don't convert tabs into spaces
 ```
