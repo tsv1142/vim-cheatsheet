@@ -12,6 +12,9 @@ Personal Vim cheatsheet.
 :%s/\v^\s+$// # remove whitespace from lines containing only whitespace
 :%s//bla/ # replace last search pattern
 
+:g/test/d #delete all lines containing "test"
+:v/test/d #delete all lines not containing "test"
+
 :%! sort # sort current buffer content
 :'<,'>norm! @q # apply macro on a visual selection
 
