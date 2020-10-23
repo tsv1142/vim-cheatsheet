@@ -16,7 +16,8 @@ Personal Vim cheatsheet.
 :v/test/d #delete all lines not containing "test"
 
 :%! sort # sort current buffer content
-:'<,'>norm! @q # apply macro on a visual selection
+:'<,'>norm @q # apply macro on a visual selection
+:bufdo %s/pattern/replace/ge | update # search & replace in all current buffers
 
 :set noexpandtab # don't convert tabs into spaces
 ```
