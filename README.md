@@ -11,6 +11,7 @@ Personal Vim cheatsheet.
 
 :%s/\v^\s+$// # remove the whitespace from lines containing only whitespace
 :%s//bla/ # replace last search pattern
+:%s/\v\D\zs(7[5-9]|[8-9][0-9])\ze\D/\=submatch(1)+1/ # add 1 to a number matching range 75-99
 
 :g/test/d #delete all lines containing "test"
 :v/test/d #delete all lines not containing "test"
