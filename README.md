@@ -19,6 +19,7 @@ Personal Vim cheatsheet.
 :%! sort # sort current buffer content
 :'<,'>norm @q # apply macro on a visual selection
 :bufdo %s/pattern/replace/ge | update # search & replace in all current buffers
+:args `grep -rl 'pattern' location/` # add files matching a specific pattern to arg list
 
 :set noexpandtab # don't convert tabs into spaces
 ```
