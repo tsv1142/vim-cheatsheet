@@ -20,6 +20,7 @@ Personal Vim cheatsheet.
 :'<,'>norm @q # apply macro on a visual selection
 :bufdo execute "normal! @q" | update # apply macro on all buffers
 :bufdo %s/pattern/replace/ge | update # search & replace in all current buffers
+:bufdo bd # close all buffers
 :args `grep -rl 'pattern' location/` # add files matching a specific pattern to arg list
 
 :set noexpandtab # don't convert tabs into spaces
