@@ -18,6 +18,7 @@ Personal Vim cheatsheet.
 
 :%! sort # sort current buffer content
 :'<,'>norm @q # apply macro on a visual selection
+:g/pattern/norm! @q # apply macro on all lines matching pattern
 :bufdo execute "normal! @q" | update # apply macro on all buffers
 :bufdo %s/pattern/replace/ge | update # search & replace in all current buffers
 :bufdo bd # close all buffers
